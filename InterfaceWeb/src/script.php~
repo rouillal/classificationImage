@@ -1,0 +1,10 @@
+<?php
+if(isset($_POST['exec']))
+{
+  if(isset($_GET['action']) && $_GET['action'] == 'yes')
+  {
+    exec('echo "coucou"', $output);
+    print_r($output);
+  }
+}
+?>
